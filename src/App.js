@@ -1,8 +1,9 @@
 import './App.css';
+require('dotenv').config();
 import React, { useState } from 'react';
 const api = {
-  key: "4ce6f592567bd4b4144de6fff1876615",
-  base: "http://api.openweathermap.org/data/2.5/",
+  key: process.env.API_KEY,
+  base:process.env.BASE,
 }
 
 function App() {
